@@ -20,13 +20,13 @@ var H5ComponentBase = function(name,cxt){
 	}
 
 	component.on('onLoad',function(){
-		component.addClass(cxt+'_load').removeClass(cls+'_leave')
+		component.addClass(cls+'_load').removeClass(cls+'_leave')
 		cxt.animateIn && component.animate(cxt.animateIn)
 		return false
 	})
 
 	component.on('onLeave',function(){
-		component.addClass(cxt+'_leave').removeClass(cls+'_load')
+		component.addClass(cls+'_leave').removeClass(cls+'_load')
 		cxt.animateOut && component.animate(cxt.animateOut)
 		return false
 	})
