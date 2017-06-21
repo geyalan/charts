@@ -21,4 +21,4 @@ var H5ComponentBar = function(name,cfg){
 	})
 
 	return component
-}
+} 
